@@ -1,0 +1,27 @@
+.paper-bg {
+  background: no-repeat url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png)
+    0 0;
+  background-color: #ebebeb;
+  background-repeat: repeat;
+}
+.headline {
+  position: relative;
+  display: inline-block;
+}
+
+.headline::after {
+  content: "";
+  display: block;
+  width: calc(100% + 2rem);
+  height: 0.5rem;
+  background-color: currentColor;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+}
+
+.infopoint {
+  position: relative;
+  display: inline-block;
+}
+

@@ -18,7 +18,7 @@ export default function RootLayout({
         <div className="p-8 ">
           <Navigation></Navigation>
 
-          <div className="mt-24">{children}</div>
+          <div className="mt-20">{children}</div>
         </div>
       </body>
     </html>

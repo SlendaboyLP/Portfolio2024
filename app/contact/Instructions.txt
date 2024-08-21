@@ -1,0 +1,2 @@
+Die Kontakt Seite soll ein Telefonbuch zeigen, in dem dann die Informationen stehen.
+Oder ein Brief Umschlag

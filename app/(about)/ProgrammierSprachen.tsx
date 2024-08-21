@@ -2,7 +2,6 @@ const programmingLanguages: { [key: string]: string } = {
   "C Sharp": "/icons/cis.png",
   Java: "/icons/java.png",
   JavaScript: "/icons/js.png",
-  
 };
 
 export default function PS() {

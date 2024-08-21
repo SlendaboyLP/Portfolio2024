@@ -3,7 +3,7 @@ import NavButton from "./NavButton";
 import "./Navigation.css";
 export default function Navigation() {
   return (
-    <nav className="w-full h-20 z-50  flex items-center justify-between fixed">
+    <nav className="w-full h-8 z-50  flex items-center justify-between fixed">
       <div>
         <p
           className="font-black text-5xl select-none cursor-pointer title "

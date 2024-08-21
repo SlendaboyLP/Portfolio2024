@@ -31,3 +31,20 @@ body {
   color: #67e8f9;
   background: #c084fc;
 }
+
+.headline {
+  position: relative;
+  display: inline-block;
+  height: min-content;
+}
+
+.headline::after {
+  content: "";
+  display: block;
+  width: calc(100% + 2rem);
+  height: 0.5rem;
+  background-color: currentColor;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+}

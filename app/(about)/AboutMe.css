@@ -4,21 +4,6 @@
   background-color: #ebebeb;
   background-repeat: repeat;
 }
-.headline {
-  position: relative;
-  display: inline-block;
-}
-
-.headline::after {
-  content: "";
-  display: block;
-  width: calc(100% + 2rem);
-  height: 0.5rem;
-  background-color: currentColor;
-  position: absolute;
-  bottom: -1rem;
-  left: 0;
-}
 
 .infopoint {
   position: relative;

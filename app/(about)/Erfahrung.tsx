@@ -3,16 +3,8 @@ import WF from "./WebFrameworks";
 import S from "./Software";
 import { useState } from "react";
 
-const colors = {
-  infoPointPL: "text-red-600",
-  infoPointWF: "text-green-600",
-  infoPointS: "text-cyan-600",
-  borderPL: "border-red-600",
-  borderWF: "border-green-600",
-  borderS: "border-cyan-600",
-};
 const infoPoints = ["Programmiersprachen", "Web Frameworks", "Software"];
-const infoPointColor = ["bg-red-600", "bg-green-600", "bg-cyan-600"];
+const infoPointColor = ["bg-red-500", "bg-green-500", "bg-cyan-500"];
 
 export default function Erfahrung() {
   // either "Programmiersprachen", "Web Frameworks" or "Software"
@@ -44,12 +36,12 @@ export default function Erfahrung() {
         </div>
         <div className="w-full">
           <div
-            className={`infobox w-full h-[28rem] border-[0.5rem] rounded-md rounded-tl-none ${
+            className={`infobox w-full h-[28rem] p-2 rounded-md rounded-tl-none ${
               selectedInfoPoint === infoPoints[0]
-                ? infoPointColor[0] + ` ${colors.borderPL}`
+                ? infoPointColor[0]
                 : selectedInfoPoint === infoPoints[1]
-                ? infoPointColor[1] + ` ${colors.borderWF}`
-                : colors.borderS + ` ${infoPointColor[2]}`
+                ? infoPointColor[1]
+                : infoPointColor[2]
             }`}
           >
             {selectedInfoPoint === infoPoints[0] ? (

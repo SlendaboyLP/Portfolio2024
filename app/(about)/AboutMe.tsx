@@ -23,9 +23,6 @@ export default function AboutMe() {
           meiner Projekte bereitstellen.
         </p>
       </div>
-
-      <Erfahrung></Erfahrung>
-      <br></br>
     </>
   );
 }

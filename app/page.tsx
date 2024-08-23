@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navigation from "./(navigation)/Navigation";
 import AboutMe from "./(about)/AboutMe";
 import StartPage from "./StartPage";
+import Erfahrung from "./(about)/Erfahrung";
 
 export default function LandingPage() {
   return (
@@ -11,7 +12,7 @@ export default function LandingPage() {
         <div id="startpage" className="w-3/5 h-1/2 ">
           <StartPage></StartPage>
         </div>
-        <div className="w-2/5 flex justify-end ">
+        <div className="w-2/5 h-auto flex justify-end ">
           <img
             src={"/alex_nobg_edited.png"}
             alt="Picture of me"
@@ -21,6 +22,8 @@ export default function LandingPage() {
       </div>
       <div className="mt-8 mb-8">
         <AboutMe></AboutMe>
+
+        <Erfahrung></Erfahrung>
       </div>
     </main>
   );

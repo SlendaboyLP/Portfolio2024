@@ -5,7 +5,7 @@ import Erfahrung from "./Erfahrung";
 export default function AboutMe() {
   return (
     <>
-      <div className="paper-bg bg-slate-200 p-8 rounded-md ">
+      <div className=" bg-white p-8 rounded-md ">
         <div className="text-center">
           <h1 className="font-bold font-serif text-5xl  headline">Über mich</h1>
         </div>
@@ -23,9 +23,6 @@ export default function AboutMe() {
           meiner Projekte bereitstellen.
         </p>
       </div>
-
-      <Erfahrung></Erfahrung>
-      <br></br>
     </>
   );
 }

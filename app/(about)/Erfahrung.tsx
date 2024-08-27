@@ -4,11 +4,7 @@ import S from "./Software";
 import { useState } from "react";
 import "./Erfahrung.css";
 
-const infoPoints = [
-  "Programmiersprachen",
-  "Web Frameworks",
-  "Tools/Software",
-];
+const infoPoints = ["Programmiersprachen", "Web Frameworks", "Tools/Software"];
 const infoPointColor = ["bg-red-500", "bg-green-500", "bg-cyan-500"];
 
 export default function Erfahrung() {

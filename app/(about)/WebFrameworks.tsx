@@ -9,6 +9,7 @@ export default function WF() {
           <div className="w-[23.773%] bg-slate-200 p-2 rounded-md">
             <div className="flex justify-center">
               <img
+                key={framework}
                 src={webFrameworks[framework]}
                 alt={framework}
                 className="w-16 h-16"

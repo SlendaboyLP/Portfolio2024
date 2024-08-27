@@ -1,8 +1,11 @@
+"use client";
+import Navigation from "../(navigation)/Navigation";
 import "./Contact.css";
 
 export default function Contact() {
   return (
     <main>
+      <Navigation></Navigation>
       {/* <iframe
         src="https://chromedino.com/"
         scrolling="no"

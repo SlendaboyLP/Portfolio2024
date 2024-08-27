@@ -8,7 +8,9 @@ import Erfahrung from "./(about)/Erfahrung";
 export default function LandingPage() {
   return (
     <main className="w-full h-screen flex flex-col  ">
-      <div className=" flex h-5/6 ">
+      <Navigation></Navigation>
+
+      <div className=" flex h-5/6 mt-24">
         <div id="startpage" className="w-3/5 h-1/2 ">
           <StartPage></StartPage>
         </div>

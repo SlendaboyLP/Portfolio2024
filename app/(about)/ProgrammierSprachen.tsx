@@ -12,6 +12,7 @@ export default function PS() {
           <div className="w-[23.773%] bg-slate-200 p-2 rounded-md">
             <div className="flex justify-center">
               <img
+                key={lang}
                 src={programmingLanguages[lang]}
                 alt={lang}
                 className="w-16 h-16"

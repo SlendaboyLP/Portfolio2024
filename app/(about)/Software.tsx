@@ -14,6 +14,7 @@ export default function S() {
           <div className="w-[23.773%] bg-slate-200 p-2 rounded-md">
             <div className="flex justify-center">
               <img
+                key={software}
                 src={softwares[software]}
                 alt={software}
                 className="w-16 h-16"

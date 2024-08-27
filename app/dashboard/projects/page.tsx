@@ -1,15 +1,14 @@
 "use client";
-import { Description, ManageAccounts, PostAdd } from "@mui/icons-material";
+import {
+  Description,
+  ManageAccounts,
+  PostAdd,
+  ArrowBack,
+} from "@mui/icons-material";
 import React from "react";
 import { useState, useEffect } from "react";
 
-type Project = {
-  id: number;
-  name: string;
-  description: string;
-  completed: boolean;
-  picture: string;
-};
+import { Project } from "./Project";
 
 export default function ProjectManagement() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -32,13 +31,22 @@ export default function ProjectManagement() {
   return (
     <main className="flex justify-center items-center ">
       <div className="bg-white rounded-md h-min  w-[80vw] p-6 px-12 ">
+        <button
+          className="bg-blue-500 text-white p-4  w-32 rounded-md"
+          onClick={() => window.history.back()}
+        >
+          <ArrowBack />
+        </button>
         <h1 className="text-center font-black text-4xl mt-2">
           Manage Projects
         </h1>
         <div>
           <div className=" flex justify-between items-center p-4">
             <h2 className="text-2xl font-bold mb-4">All Projects</h2>
-            <button className="bg-blue-500 text-white p-4  w-32 rounded-md">
+            <button
+              className="bg-blue-500 text-white p-4  w-32 rounded-md"
+              onClick={() => (window.location.href = "/dashboard/projects/0")}
+            >
               Add Project
             </button>
           </div>
@@ -55,7 +63,12 @@ export default function ProjectManagement() {
                   <p className="text-gray-500">{project.description}</p>
                 </div>
                 <div className=" w-32 flex justify-between">
-                  <button className="hover:bg-gray-100 p-4 rounded-md">
+                  <button
+                    className="hover:bg-gray-100 p-4 rounded-md"
+                    onClick={() =>
+                      (window.location.href = `/dashboard/projects/${project.id}`)
+                    }
+                  >
                     Edit
                   </button>
                   <button
